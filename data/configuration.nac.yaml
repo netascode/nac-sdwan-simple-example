@@ -1,0 +1,41 @@
+---
+sdwan:
+  configuration_groups:
+    - name: branches
+      system_profile: system
+      transport_profile: transport
+  feature_profiles:
+    system_profiles:
+      - name: system
+        aaa:
+          name: aaa
+          users:
+            - name: admin
+              password: YudmqT6MWZyak3M
+        basic:
+          name: basic
+        bfd:
+          name: bfd
+        logging:
+          name: logging
+        global:
+          name: global
+        omp:
+          name: omp
+    transport_profiles:
+      - name: transport
+        wan_vpn:
+          name: wan_vpn
+          ethernet_interfaces:
+            - name: inet
+              interface_name_variable: inet_interface_name
+              ipv4_configuration_type: dynamic
+              shutdown: false
+              tunnel_interface:
+                color: biz-internet
+            - name: mpls
+              interface_name_variable: mpls_interface_name
+              ipv4_configuration_type: dynamic
+              shutdown: false
+              tunnel_interface:
+                color: mpls

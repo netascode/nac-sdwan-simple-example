@@ -1,0 +1,14 @@
+sdwan:
+  sites:
+    - id: 1
+      routers:
+        - chassis_id: C8K-3D1A8960-6E76-532C-DA93-50626FC5797E
+          configuration_group: branches
+          configuration_group_deploy: true
+          device_variables:
+            host_name: edge1
+            system_ip: 10.0.0.1
+            site_id: 1
+            pseudo_commit_timer: 300
+            inet_interface_name: GigabitEthernet1
+            mpls_interface_name: GigabitEthernet2

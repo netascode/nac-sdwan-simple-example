@@ -1,0 +1,9 @@
+# Overwrite default values here
+
+# defaults:
+#   sdwan:
+#     feature_profiles:
+#       transport_profiles:
+#         wan_vpn:
+#           ethernet_interfaces:
+#             ipv6_configuration_type: dynamic
