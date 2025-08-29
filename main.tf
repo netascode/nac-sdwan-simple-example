@@ -14,6 +14,6 @@ provider "sdwan" {
 
 module "sdwan" {
   source           = "netascode/nac-sdwan/sdwan"
-  version          = "1.1.0"
+  version          = "1.2.0"
   yaml_directories = ["data"]
 }
