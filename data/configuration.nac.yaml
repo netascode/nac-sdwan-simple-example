@@ -16,14 +16,16 @@ sdwan:
           name: basic
         bfd:
           name: bfd
-        logging:
-          name: logging
         global:
           name: global
+        logging:
+          name: logging
         omp:
           name: omp
     transport_profiles:
       - name: transport
+        gps_features:
+          - name: gps
         wan_vpn:
           name: wan_vpn
           ethernet_interfaces:
